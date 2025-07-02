@@ -15,6 +15,10 @@ class PrimeFactors {
 				}
 				
 			}
+			else if (number == 6) {
+				factors.push_back(2);
+				factors.push_back(3);
+			}
 			else {
 				factors.push_back(number);
 			}
