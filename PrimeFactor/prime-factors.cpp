@@ -24,6 +24,14 @@ class PrimeFactors {
 					}
 				}
 			}
+			else if (number == 9) {
+				for (divisor = 2; number > 1; divisor++) {
+					while (number % divisor == 0) {
+						factors.push_back(divisor);
+						number /= divisor;
+					}
+				}
+			}
 			else {
 				factors.push_back(number);
 			}
