@@ -17,13 +17,17 @@ TEST_F(PrimeFactorsTest, Of1) {
 }
 
 TEST_F(PrimeFactorsTest, Of2) {
-	expected.push_back(2);
+	expected = { 2 };
 	EXPECT_EQ(expected, prime_factor.of(2));
 
 }
 
 TEST_F(PrimeFactorsTest, Of3) {
-	expected.push_back(3);
+	expected = { 3 };
 	EXPECT_EQ(expected, prime_factor.of(3));
 
+}
+TEST_F(PrimeFactorsTest, Of4) {
+	expected = {2, 2};
+	EXPECT_EQ(expected, prime_factor.of(4));
 }
