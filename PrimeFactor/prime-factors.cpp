@@ -9,8 +9,14 @@ class PrimeFactors {
 		if (number > 1)
 		{
 			if (number == 4) {
-				factors.push_back(2);
-				factors.push_back(2);
+				if (number % 2 == 0) {
+					factors.push_back(2);
+					number /= 2;
+				}
+				if (number % 2 == 0) {
+					factors.push_back(2);
+					number /= 2;
+				}
 			}
 			else {
 				factors.push_back(number);
