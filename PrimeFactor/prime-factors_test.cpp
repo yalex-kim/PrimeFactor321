@@ -5,16 +5,19 @@
 using std::vector;
 using namespace testing;
 
-TEST(PrimeFactors, Of1) {
+class PrimeFactorsTest : public Test {
+public:
 	PrimeFactors prime_factor;
 	vector<int> expected = {};
+};
+
+TEST_F(PrimeFactorsTest, Of1) {
 	EXPECT_EQ(expected, prime_factor.of(1));
 
 }
 
-TEST(PrimeFactors, Of2) {
-	PrimeFactors prime_factor;
-	vector<int> expected = {2};
+TEST_F(PrimeFactorsTest, Of2) {
+	expected.push_back(2);
 	EXPECT_EQ(expected, prime_factor.of(2));
 
 }
