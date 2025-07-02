@@ -6,12 +6,10 @@ class PrimeFactors {
 	public:
 	vector<int> of(int number) {
 		vector<int> factors;
-		if (number == 2) {
+		if (number >  1) {
 			factors.push_back(number);
 		}
-		if (number == 3) {
-			factors.push_back(number);
-		}
+		
 
 		return factors;
 	}
